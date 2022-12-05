@@ -7,3 +7,5 @@ git commit -m "init"
 git push
 
 clear
+
+echo "SUCCESS"
