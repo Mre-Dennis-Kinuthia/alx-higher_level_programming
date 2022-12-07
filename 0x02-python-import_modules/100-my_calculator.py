@@ -5,9 +5,8 @@ def my_calc():
     args_count = len(sys.argv)
     if args_count != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-
-        return 1
-    elif sys.argv[2] != '-' or sys.argv[2] != '+' or sys.argv[2] != '*' or sys.argv!= '/':
+        exit(1)
+    elif sys.argv[2] != '-' and sys.argv[2] != '+' and sys.argv[2] != '*' and sys.argv!= '/':
         print("Unknown operator. Available operators: +, -, * and /")
         return 1
     else:
