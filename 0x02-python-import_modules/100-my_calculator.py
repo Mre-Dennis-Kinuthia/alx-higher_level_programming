@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-import calculator_1.py
-import sys
 
-args_count = len(argv)
+
 def my_calc():
+    args_count = len(argv)
     if args_count != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
 
@@ -16,4 +15,6 @@ def my_calc():
 
 
 if __name__ == "__main__":
+    import calculator_1.py
+    import sys
     my_calc()
