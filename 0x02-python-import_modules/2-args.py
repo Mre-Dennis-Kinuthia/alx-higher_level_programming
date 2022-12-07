@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
-
-    if len(agrv) < 0:
-        print("")
+    from sys import argv
+    count = len(argv)
+    
+    if count == 1:
+        print("0 arguments.")
+    elif count == 2:
+        print("{:d} arguments:".format(count - 1))
     else:
-        for i in agrv:
-            print("{:d}", " ", "{:s}".format(len(agrv), agrv[i]))
+        print("{:d}} arguments:".format(count - 1))
+        
+    for i in range(1, count):
+        print("{:d}: {:s}".format((i), argv[i])
