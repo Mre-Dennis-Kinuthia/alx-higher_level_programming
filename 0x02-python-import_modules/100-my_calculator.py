@@ -1,8 +1,9 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
+
 
 def my_calc():
-    args_count = len(sys.argv) -1
-    if args_count < 3:
+    args_count = len(sys.argv)
+    if args_count != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
 
         return 1
@@ -10,13 +11,10 @@ def my_calc():
         print("Unknown operator. Available operators: +, -, * and /")
         return 1
     else:
-        print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3], add(a, b)))
-        print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3], sub(a, b)))
-        print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3], mul(a, b)))
-        print("{:d} {:s} {:d} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3], div(a, b)))
+        print("{:d} {:s} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3]))
 
 
 if __name__ == "__main__":
-    from calculator_1.py import add, sub, mul, div
+    #import calculator_1.py
     import sys
     my_calc()
