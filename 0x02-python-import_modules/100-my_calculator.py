@@ -8,7 +8,7 @@ def my_calc():
         exit(1)
     elif sys.argv[2] != '-' and sys.argv[2] != '+' and sys.argv[2] != '*' and sys.argv!= '/':
         print("Unknown operator. Available operators: +, -, * and /")
-        return 1
+        exit(1)
     else:
         print("{:d} {:s} = {:d}".format(sys.argv[1], sys.argv[2], sys.argv[3]))
 
