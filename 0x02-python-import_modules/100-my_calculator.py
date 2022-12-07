@@ -20,6 +20,6 @@ def my_calc():
 
 
 if __name__ == "__main__":
-    #import calculator_1.py
+    from calculator_1 import add, sub, mul, div
     import sys
     my_calc()
