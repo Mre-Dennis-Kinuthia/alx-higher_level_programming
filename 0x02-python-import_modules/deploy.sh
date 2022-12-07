@@ -8,4 +8,4 @@ git push
 
 clear
 
-echo "SUCCESS"
+echo "SUCCESSFULLY DEPLOYED"
