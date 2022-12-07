@@ -2,19 +2,19 @@
 
 
 def my_calc():
-    args_count = len(argv)
-    if args_count != 3:
+    args_count = len(sys.argv)
+    if args_count < 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
 
         return 1
-    elif argv[2] != '-' or argv[2] != '+' or argv[2] != '*' or argv[2] != '/':
+    elif sys.argv[3] != '-' or sys.argv[3] != '+' or sys.argv[3] != '*' or sys.argv!= '/':
         print("Unknown operator. Available operators: +, -, * and /")
         return 1
     else:
-        print("{:d} {:s} = {:d}".format(argv[1], argv[2], argv[3]))
+        print("{:d} {:s} = {:d}".format(sys.argv[1], sys.argv[3], sys.argv[3]))
 
 
 if __name__ == "__main__":
-    import calculator_1.py
+    #import calculator_1.py
     import sys
     my_calc()
