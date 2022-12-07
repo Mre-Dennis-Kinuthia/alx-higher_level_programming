@@ -1,15 +1,13 @@
-#!/usr/bin/env python3.8
-# Import the compiled module
-import hidden_4.pcy
+#!/usr/bin/python3
+import hidden_4
 
-# Get a list of all the names defined in the module
-names = dir(hidden_4)
 
-# Sort the names in alphabetical order
-names.sort()
+def discover():
+    name = dir(hidden_4)
+    for i in name:
+        if i[:2] != '__':
+            print("{:s}".format(i))
 
-# Print the names, one per line
-for name in names:
-    # Only print names that do not start with __
-    if not name.startswith("__"):
-        print(name)
+
+if __name__ == '__main__':
+    discover()
