@@ -1,15 +1,20 @@
 #!/usr/bin/python3
-def
+def print_arg(argv):
+    count = len(argv) - 1
+
+    print("{:d} argument.".format(n))
+    return
+    else:
+        if n == 1:
+            print("{:d} argument:".format(n))
+        else:
+            print("{:d} arguments:".format(n))
+        i = 1
+        while i <= n:
+            print("{:d}: {:s}".format(i, argv[i]))
+            i += 1
+
+              
 if __name__ == "__main__":
     from sys import argv
-    count = len(argv)
-    
-    if count == 1:
-        print("0 arguments.")
-    elif count == 2:
-        print("{:d} arguments:".format(count - 1))
-    else:
-        print("{:d}} arguments:".format(count - 1))
-        
-    for i in range(1, count):
-        print("{:d}: {:s}".format((i), argv[i])
+    print_arg(sys.argv)
