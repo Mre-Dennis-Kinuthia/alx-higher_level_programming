@@ -12,6 +12,7 @@ def add_argv(args):
             i += 1
         print("{:d}".format(add))
 
+
 if __name__ == "__main__":
     import sys
     add_argv(sys.argv)
