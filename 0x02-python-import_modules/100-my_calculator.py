@@ -17,6 +17,6 @@ def my_calc():
             sys.argv[1], sys.argv[2], sys.argv[2], div(a, b)))
 
 if __name__ == "__main__":
-    #import calculator_1.py
+    from calculator.py import add, sub, mul, div
     import sys
     my_calc()
