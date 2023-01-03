@@ -10,5 +10,4 @@ class Rectangle:
     """
     def width:
           def __init__ (self, value):
-              try:
-                  if value < 0:
+              if not iainstance(width, int):
