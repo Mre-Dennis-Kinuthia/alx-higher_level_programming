@@ -8,6 +8,9 @@ class Rectangle:
     """
     create rectangle object
     """
-    def width:
-          def __init__ (self, value):
-              if not iainstance(width, int):
+    def width(self):
+        def __init__ (self, value):
+            if not iainstance(width, int):
+                raise TypeError('width must be an integer')
+            self.value = value
+            
