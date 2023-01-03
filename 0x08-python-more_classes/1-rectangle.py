@@ -8,5 +8,7 @@ class Rectangle:
     """
     create rectangle object
     """
-    def width(self):
-        
+    def width:
+          def __init__ (self, value):
+              try:
+                  if value < 0:
