@@ -10,7 +10,7 @@ class Rectangle:
     """
     def width(self):
         def __init__ (self, value):
-            if not iainstance(width, int):
+            if not isinstance(width, int):
                 raise TypeError('width must be an integer')
             self.value = value
-            
+            if value < 0:
