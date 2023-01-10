@@ -10,4 +10,12 @@ class Student:
         self.age = age
 
     def to_json(snt):
+        """_summary_
+
+    Args:
+        obj (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
         return self.__dict__
