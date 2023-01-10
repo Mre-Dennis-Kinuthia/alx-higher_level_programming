@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""function that returns an object 
+"""function that returns an object
 """
 import json
 
