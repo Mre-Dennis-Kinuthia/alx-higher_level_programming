@@ -9,5 +9,4 @@ def write_file(filename="", text=""):
     """Writes a text file (UTF8) and retuns its lenth
     """
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(text)
-        return len(text)
+        return f.write(text)
