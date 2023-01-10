@@ -10,9 +10,9 @@ class Student:
         self.age = age
 
 
-def to_json(self):
+def to_json(snt):
     json_obj = {}
-    for key in self.__dict__:
-        if isinstance(self.__dict__[key], (int, str, float, bool, list, dict)):
-            json_obj[key] = self.__dict__[key]
+    for key in snt.__dict__:
+        if isinstance(snt.__dict__[key], (int, str, float, bool, list, dict)):
+            json_obj[key] = snt.__dict__[key]
     return json_obj
