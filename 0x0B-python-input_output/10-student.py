@@ -13,14 +13,11 @@ class Student:
         self.last_name = last_name
         self.age = age
 
+
 def to_json(self, attrs=None):
     """function module to convert attributes to json
     """
-    data = {}
-    if attrs is not None:
-        for attr in attrs:
-            if hasattr(self, attr):
-                data[attr] = getattr(self, attr)
-    else:
-        data = self.__dict__
-        return data
+    if (type(attrs) == list and
+            all(type(ele) == str for ele in attrs)):
+        return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
