@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-    """class declaration
-    """
+"""Defines a class Student
+"""
+
+
 class Student:
     """class module
     """
