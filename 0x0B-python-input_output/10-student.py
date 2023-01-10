@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""Defines a class Student
-"""
-
-
+    """class declaration
+    """
 class Student:
     """class module
     """
@@ -28,4 +26,5 @@ class Student:
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        else:
             return self.__dict__
