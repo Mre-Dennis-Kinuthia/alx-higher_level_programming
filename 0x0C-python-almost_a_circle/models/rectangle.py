@@ -14,7 +14,7 @@ class Rectangle(Base):
         """
         Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
         Call the super class with id - this super call with use the logic of the __init__ of the Base class
-        Assign each argument width, height, x and y to the right attribute
+        Assign each argument width, height, area, x and y to the right attribute
         """
         super().__init__(id)
         self.__width = width
@@ -77,3 +77,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be > 0")
         self.__y = value
+
+    def area(self):
+        """Return the area of the rectangle"""
+        return self.width * self.height
