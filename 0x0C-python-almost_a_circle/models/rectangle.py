@@ -15,10 +15,10 @@ class Rectangle(Base):
         """
         Class constructor: def __init__(self, width, height,
         x=0, y=0, id=None):
-        Call the super class with id - 
-        this super call with use the logic 
+        Call the super class with id -
+        this super call with use the logic
         of the __init__ of the Base class
-        Assign each argument width, height, 
+        Assign each argument width, height,
         area, x and y to the right attribute
         """
         super().__init__(id)
@@ -36,7 +36,7 @@ class Rectangle(Base):
     def width(self, value):
         """Setter for width"""
         if type(value) != int:
-            raise TypeError ("width must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
@@ -50,7 +50,7 @@ class Rectangle(Base):
     def height(self, value):
         """Setter for height"""
         if type(value) != int:
-            raise TypeError ("height must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
@@ -64,7 +64,7 @@ class Rectangle(Base):
     def x(self, value):
         """Setter for x"""
         if type(value) != int:
-            raise TypeError ("x must be an integer")
+            raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be > 0")
         self.__x = value
@@ -78,7 +78,7 @@ class Rectangle(Base):
     def y(self, value):
         """Setter for y"""
         if type(value) != int:
-            raise TypeError ("y must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be > 0")
         self.__y = value
@@ -93,5 +93,6 @@ class Rectangle(Base):
             print("#" * self.width)
 
     """def __str__(self):
-        return f'Rectangle({'('self.id')', self.x'/'self.y '-' self.width'/'self.height'/'self.width})'
+        return f'Rectangle({'('self.id')',
+        self.x'/'self.y '-' self.width'/'self.height'/'self.width})'
     """
