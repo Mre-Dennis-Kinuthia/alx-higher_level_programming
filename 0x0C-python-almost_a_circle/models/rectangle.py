@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     Class Rectangle inherits from Base
@@ -12,9 +13,13 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
-        Call the super class with id - this super call with use the logic of the __init__ of the Base class
-        Assign each argument width, height, area, x and y to the right attribute
+        Class constructor: def __init__(self, width, height,
+        x=0, y=0, id=None):
+        Call the super class with id - 
+        this super call with use the logic 
+        of the __init__ of the Base class
+        Assign each argument width, height, 
+        area, x and y to the right attribute
         """
         super().__init__(id)
         self.__width = width
@@ -86,3 +91,7 @@ class Rectangle(Base):
         """Return the display of the rectangle"""
         for x in range(self.height):
             print("#" * self.width)
+
+    """def __str__(self):
+        return f'Rectangle({'('self.id')', self.x'/'self.y '-' self.width'/'self.height'/'self.width})'
+    """
