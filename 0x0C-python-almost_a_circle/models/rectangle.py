@@ -19,13 +19,17 @@ class Rectangle(Base):
         return self.__width
 
     def width(self, value):
-        self.__width = value
+        if type(value) != int:
+            self.__width = value
+            raise TypeError("")
 
     @property
     def height(self):
         return self.__height
 
     def height(self, value):
+        if type(height) != int:
+            raise TypeError("")
         self.__height = value
 
     @property
@@ -33,6 +37,8 @@ class Rectangle(Base):
         return self.__x
 
     def x(self, value):
+        if type(x) != int:
+            raise TypeError("")   
         self.__x = value
 
     @property
@@ -40,4 +46,6 @@ class Rectangle(Base):
         return self.__y
 
     def y(self, value):
+        if type(y) != int:
+            raise TypeError("")
         self.__y = value
