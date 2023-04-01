@@ -1,14 +1,20 @@
 #!/usr/bin/python3
 """
-Python script that takes 2 arguments in order to solve the given challenge
+script to list 10 commits (from the most recent to oldest) of
+the repository “rails” by the user “rails”
 """
-import requests
 from sys import argv
+import requests
 
-if __name__ == '__main__':
-    url = "https://api.github.com/repos/{}/{}/commits".format(argv[2], argv[1])
+
+if __name__ == "__main__":
+    usr = argv[2]
+    repo = argv[1]
+    url = "https://api.github.com/repos/" + usr + "/" + repo + "/commits"
     r = requests.get(url)
-    commits = r.json()
-    for commit in commits[:10]:
-        print(commit.get('sha'), end=': ')
-        print(commit.get('commit').get('author').get('name'))
+    result = r.json()
+
+    for i in range(10):
+        sha = result[i].get("sha")
+        author_name = result[i].get("commit").get("author").get("name")
+        print("{}: {}".format(sha, author_name))
