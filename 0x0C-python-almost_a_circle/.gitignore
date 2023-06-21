@@ -1,0 +1,8 @@
+#Ignore main files
+*main*
+
+#Ignore emacs generated files
+*~
+
+#Ignore pycache folder
+__pycache__/*
